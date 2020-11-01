@@ -25,12 +25,14 @@ for (let i = 0; i < navbarItems.length; i++) {
 //====================== COFEE PRODUCTS ===========================//
 
 // zachytit element, kam vložím komponentu Drink
-const product = document.querySelector('.drinks-list');
+
+const getDrinks = (drinks) => {
+  const product = document.querySelector('.drinks-list');
+  drinks.forEach((drink) => {
+    product.appendChild(Drink(drink));
+  });
+};
 
 fetch(`http://cafelora.kodim.cz/api/drinks`)
   .then((response) => response.json())
-  .then((drinks) => {
-    drinks.forEach((drink) => {
-      product.appendChild(Drink(drink));
-    });
-  });
+  .then(getDrinks);
