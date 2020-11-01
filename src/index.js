@@ -1,5 +1,8 @@
 import './index.html';
 import './style.css';
+import { Layer } from './Layer';
+
+//====================== MENU ===========================//
 
 // zachytit elementy
 const navbar = document.querySelector('#nav-btn');
@@ -19,6 +22,8 @@ for (let i = 0; i < navbarItems.length; i++) {
   });
 }
 
+//====================== ORDER ===========================//
+
 // zachytit elementy pro objednávku
 const orderButton = document.querySelector('.order-btn');
 const drinkCup = document.querySelector('.drink__cup');
@@ -37,3 +42,15 @@ orderButton.addEventListener('click', () => {
   }
   drinkCup.classList.toggle('drink__cup--selected');
 });
+
+//====================== COFEE PRODUCTS/INGREDIENCES ===========================//
+
+// testovací položka pro komponentu
+const layer = {
+  color: '#feeeca',
+  label: 'mléčná pěna',
+};
+
+// zachytit element, kam vložím HTML komponentu
+const product = document.querySelector('.drink__info');
+product.appendChild(Layer(layer));
