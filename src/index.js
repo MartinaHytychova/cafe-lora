@@ -45,12 +45,33 @@ orderButton.addEventListener('click', () => {
 
 //====================== COFEE PRODUCTS/INGREDIENCES ===========================//
 
-// testovací položka pro komponentu
-const layer = {
+// testovací vrstva pro komponentu Layer
+/*const layer = {
   color: '#feeeca',
   label: 'mléčná pěna',
-};
+};*/
+
+// vrstvy pro komponentu Layer
+const layers = [
+  {
+    color: '#feeeca',
+    label: 'mléčná pěna',
+  },
+  {
+    color: '#fed7b0',
+    label: 'teplé mléko',
+  },
+  {
+    color: '#613916',
+    label: 'espresso',
+  },
+];
 
 // zachytit element, kam vložím HTML komponentu
 const product = document.querySelector('.drink__info');
-product.appendChild(Layer(layer));
+
+// přidat všechny 3 vrstvy
+for (let j = 0; j < layers.length; j++) {
+  product.appendChild(Layer(layers[j]));
+}
+
