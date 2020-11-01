@@ -30,7 +30,7 @@ const product = document.querySelector('.drinks-list');
 fetch(`http://cafelora.kodim.cz/api/drinks`)
   .then((response) => response.json())
   .then((drinks) => {
-    for (let j = 0; j < drinks.length; j++) {
-      product.appendChild(Drink(drinks[j]));
-    }
+    drinks.forEach((drink) => {
+      product.appendChild(Drink(drink));
+    });
   });
