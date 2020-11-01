@@ -74,7 +74,6 @@ header {
 nav {
   width: 10rem;
   padding: 1rem;
-
   background-color: #301a1a;
 }
 
@@ -287,11 +286,11 @@ nav a:hover {
 
   nav {
     width: initial;
+    padding: 0;
   }
 
   nav a {
     display: inline-block;
-
     margin-top: 0rem;
     margin-bottom: 0rem;
   }
@@ -313,5 +312,8 @@ nav a:hover {
 @media screen and (min-width: 768px) {
   .nav-btn {
     display: none;
+  }
+  nav {
+    padding: 1rem;
   }
 }
