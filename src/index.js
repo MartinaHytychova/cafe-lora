@@ -24,23 +24,13 @@ for (let i = 0; i < navbarItems.length; i++) {
 
 //====================== COFEE PRODUCTS ===========================//
 
-// objekt s properties pro komponentu Drink
-const productObj = {
-  id: 'romano',
-  name: 'Romano',
-  ordered: false,
-  layers: [
-    {
-      color: '#fbdf5b',
-      label: 'citrón',
-    },
-    {
-      color: '#613916',
-      label: 'espresso',
-    },
-  ],
-};
-
 // zachytit element, kam vložím komponentu Drink
 const product = document.querySelector('.drinks-list');
-product.appendChild(Drink(productObj));
+
+fetch(`http://cafelora.kodim.cz/api/drinks`)
+  .then((response) => response.json())
+  .then((drinks) => {
+    for (let j = 0; j < drinks.length; j++) {
+      product.appendChild(Drink(drinks[j]));
+    }
+  });
