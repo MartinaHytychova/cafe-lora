@@ -11,9 +11,7 @@ html {
 
 body {
   margin: 0;
-
   background-image: url('./img/spots.png');
-
   color: white;
 }
 
@@ -31,7 +29,6 @@ section {
 h1,
 h2 {
   margin-bottom: 1rem;
-
   font-family: 'Great Vibes', fantasy;
   font-weight: 400;
   font-size: 3rem;
@@ -48,7 +45,6 @@ h3 {
 header {
   padding: 1rem 0 1rem 0;
   height: 5rem;
-
   background-color: #301a1a;
 }
 
@@ -60,7 +56,6 @@ header {
 .site-logo {
   width: 180px;
   height: 50px;
-
   background-image: url('./img/site-logo.png');
   background-size: contain;
 }
@@ -79,12 +74,9 @@ nav {
 
 nav a {
   display: block;
-
   margin: 1rem;
-
   color: #ddd;
   border-bottom: 1px solid transparent;
-
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -102,11 +94,9 @@ nav a:hover {
   height: 3rem;
   padding: 0;
   border: none;
-
   background-color: transparent;
   background-image: url('./img/menu.png');
   background-size: contain;
-
   cursor: pointer;
 }
 
@@ -116,7 +106,6 @@ nav a:hover {
 
 .banner {
   padding-top: 0;
-
   background-image: url('./img/beans.jpg');
   background-size: cover;
   background-position: top center;
@@ -125,7 +114,6 @@ nav a:hover {
 .intro {
   padding-top: 30rem;
   padding-bottom: 3rem;
-
   text-align: center;
 }
 
@@ -137,76 +125,6 @@ nav a:hover {
   max-width: 20rem;
   margin: 0 auto 0 auto;
   text-align: center;
-}
-
-.drinks-list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-
-  margin-bottom: 4rem;
-}
-
-.drink {
-  padding: 2rem;
-}
-
-.drink__product {
-  display: flex;
-}
-
-.drink__cup {
-  width: 9rem;
-  height: 9rem;
-}
-
-.drink__cup img {
-  width: 9rem;
-  height: 9rem;
-}
-
-.drink__cup--selected {
-  background-image: url('./img/cup-selected.png');
-  background-size: contain;
-}
-
-.drink__cup--selected img {
-  display: none;
-}
-
-.drink__info {
-  margin-left: 1rem;
-}
-
-.drink__controls {
-  margin-top: 1rem;
-
-  text-align: center;
-}
-
-.order-btn {
-  padding: 0.5rem 1rem;
-
-  color: white;
-  background-color: #ea946f;
-  border: none;
-  box-shadow: 0 0 5px #444;
-  border-radius: 1rem;
-
-  transition: 300ms;
-  cursor: pointer;
-}
-
-.order-btn:hover {
-  transform: scale(1.1);
-}
-
-.order-btn:focus {
-  outline: none;
-}
-
-.order-btn:active {
-  background-color: #e67e51;
 }
 
 .gallery {
@@ -235,7 +153,6 @@ nav a:hover {
 
 .contacts {
   margin-bottom: 4rem;
-
   text-align: center;
 }
 
@@ -255,7 +172,6 @@ nav a:hover {
 
   .banner {
     height: 600px;
-
     background-position: top left;
   }
 
@@ -280,10 +196,8 @@ nav a:hover {
 
   .intro {
     width: 30%;
-
     margin-left: 65%;
     padding-top: 4rem;
-
     text-align: center;
   }
 }
