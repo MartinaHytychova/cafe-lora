@@ -32,10 +32,10 @@ export const Drink = (props) => {
   // na kliknutí vybrat kafe nebo zrušit objednávku
   orderButton.addEventListener('click', () => {
     if (props.ordered) {
-      orderButton.innerHTML = 'Zrušit';
+      orderButton.innerHTML = 'Objednat';
       props.ordered = false;
     } else {
-      orderButton.innerHTML = 'Objednat';
+      orderButton.innerHTML = 'Zrušit';
       props.ordered = true;
     }
     drinkCup.classList.toggle('drink__cup--selected');
